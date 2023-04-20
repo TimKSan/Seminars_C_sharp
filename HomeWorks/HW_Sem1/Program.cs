@@ -56,15 +56,15 @@
 // 5 -> 2, 4
 // 8 -> 2, 4, 6, 8
 
-Console.WriteLine("Введите число");
-int num = Convert.ToInt32(Console.ReadLine());
-int count = 2;
+// Console.WriteLine("Введите число");
+// int num = Convert.ToInt32(Console.ReadLine());
+// int count = 2;
 
-while (count <= num)
-{
-    if (count % 2 == 0)
-    {
-        Console.WriteLine(count);
-    }
-    count++;
-}
+// while (count <= num)
+// {
+//     if (count % 2 == 0)
+//     {
+//         Console.WriteLine(count);
+//     }
+//     count++;
+// }
