@@ -51,77 +51,49 @@ int[] ShowSumOddNum(int size = 6, int minVal = -10, int maxVal = 11)
 ShowSumOddNum();
 */
 
+
 // Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
 // [3 7 22 2 78] -> 76
 
-// double[] DiffMaxMin (int size = 5, int minVal = 0, int maxVal = 100)
-// {
-//     double[] newArray = new double[size];
-    
-//     for (int i = 0; i < size; i++)
-//     {
-//         newArray[i] = new Random().Next(minVal, maxVal) + new Random().NextDouble();
-//         double minNum = newArray[0];
-//         //Console.WriteLine($"arr min - {minNum}");
-//         double maxNum = newArray[0];
-//         double diffMinMax = maxNum - minNum;
-
-//         if (newArray[i] < minNum) 
-//         {
-//             minNum = newArray[i];
-//             Console.WriteLine($"min - {minNum}");
-//         }
-//         else if (newArray[i] > maxNum) 
-//         {
-//             maxNum = newArray[i];
-//             Console.WriteLine($"max - {maxNum}");
-//         }
-//         //Console.WriteLine(diffMinMax);
-//     }
-    
-    
-//     return newArray;
-// }
-
-int[] DiffMaxMin (int size = 5, int minVal = 0, int maxVal = 100)
+/*
+double[] DiffMaxMin(int size = 5, int minVal = 0, int maxVal = 100)
 {
-    int[] newArray = new int[size];
-    
+    double[] newArray = new double[size];
+
+    double minNum = 100;
+    double maxNum = 0;
+
     for (int i = 0; i < size; i++)
     {
-        newArray[i] = new Random().Next(minVal, maxVal);
-        int minNum = newArray[0];
-        int maxNum = newArray[0];
-    
-        if (newArray[i] < minNum) 
+        newArray[i] = new Random().Next(minVal, maxVal) + new Random().NextDouble();
+
+        if (newArray[i] < minNum)
         {
             minNum = newArray[i];
-            //Console.WriteLine($"min - {minNum}");
         }
-        else if (newArray[i] > maxNum) 
+
+        else if (newArray[i] > maxNum)
         {
             maxNum = newArray[i];
-            //Console.WriteLine($"max - {maxNum}");
         }
-        int diffMinMax = maxNum - minNum;
     }
-    
+
+    double diffMinMax = maxNum - minNum;
     Console.WriteLine(diffMinMax);
-    
+
     return newArray;
 }
 
-void PrinArray(int [] array)
+
+void PrinArray(double[] array)
 {
-    for(int i = 0; i < array.Length; i++)
+    for (int i = 0; i < array.Length; i++)
     {
-        Console.Write(array[i]+ " ");
+        Console.Write(array[i] + " ");
     }
     Console.WriteLine();
 }
 
-
-int[] myArray = DiffMaxMin();
+double[] myArray = DiffMaxMin();
 PrinArray(myArray);
-
-//Console.WriteLine(new Random().Next(0, 100) + new Random().NextDouble());
+*/
