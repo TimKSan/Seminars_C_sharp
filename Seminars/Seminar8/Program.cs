@@ -86,30 +86,30 @@
 //строку и столбец, а пересечении которых расположен наименьший элемент.
 // то есть удалаем и строку и столбец в которой находится этот элемент
 
-//int[,] DellRowsColumnsForMin(int[,] array)
+// int[,] DellRowsColumnsForMin(int[,] array)
 // {
-//     int min=array[0,0];
-//     int mr=0;
-//     int mc=0;
+//     int min = array[0, 0];
+//     int mr = 0;
+//     int mc = 0;
 //     for (int i = 0; i < array.GetLength(0); i++)
 //     {
 //         for (int j = 0; j < array.GetLength(1); j++)
 //         {
-//             if(array[i,j]<min)
+//             if (array[i, j] < min)
 //             {
-//                 min=array[i,j];
-//                 mr=i;
-//                 mc=j;
+//                 min = array[i, j];
+//                 mr = i;
+//                 mc = j;
 //             }
 //         }
 //     }
 //     for (int z = 0; z < array.GetLength(0); z++)
 //     {
-//         array[z,mc]=0;
+//         array[z, mc] = 0;
 //     }
 //     for (int d = 0; d < array.GetLength(1); d++)
 //     {
-//         array[mr,d]=0;
+//         array[mr, d] = 0;
 //     }
 //     return array;
 // }
