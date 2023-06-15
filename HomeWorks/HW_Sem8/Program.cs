@@ -152,6 +152,7 @@ ShowMinSum(myArray);
 
 
 
+
 //Задача 58: Задайте две матрицы. Напишите программу, которая будет 
 //находить произведение двух матриц.
 
@@ -237,6 +238,75 @@ Print2DArray(myArray2);
 Console.WriteLine("___");
 Print2DArray(myArray3);
 */
+
+
+
+
+
+
+
+
+
+
+// Задача 60. ...Сформируйте трёхмерный массив из неповторяющихся двузначных чисел. 
+// Напишите программу, которая будет построчно выводить массив, добавляя индексы каждого элемента.
+
+/*
+int[,,] Create3DRandomArray(int rows, int colums, int rowDepth, int minValue, int maxValue)
+{
+    int[,,] array = new int[rows, colums, rowDepth];
+
+    for (int i = 0; i < rows; i++)
+    {
+        for (int j = 0; j < colums; j++)
+        {
+            for (int k = 0; k < rowDepth; k++)
+            {
+                array[i, j, k] = new Random().Next(minValue, maxValue);
+            }
+        }
+    }
+    return array;
+}
+
+void Print3DArray(int[,,] array)
+{
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            for (int k = 0; k < array.GetLength(2); k++)
+            {
+                Console.Write($"{array[i, j, k], 1}{(i, j, k)}" + " ");
+                Console.WriteLine();
+            }
+        }
+        
+    }
+}
+
+Console.WriteLine($"input num of rows");
+int rows = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine($"input num of colums");
+int colums = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine($"input num of rows depth");
+int rowDepth = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine($"input mminValue");
+int minValue = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine($"input maxValue");
+int maxValue = Convert.ToInt32(Console.ReadLine());
+
+int[,,] myArray = Create3DRandomArray(rows, colums, rowDepth, minValue, maxValue);
+
+Print3DArray(myArray);
+*/
+
+
+
 
 
 
